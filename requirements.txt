@@ -1,0 +1,21 @@
+# Core deep-learning stack (install torch/torchvision separately for your CUDA
+# version, see README). Versions below match the tested environment.
+torch==2.4.0
+torchvision==0.19.0
+transformers @ git+https://github.com/huggingface/transformers@6d00f6b0a5679c36510f203e4226e36f517c3032
+accelerate==1.12.0
+flash-attn==2.7.3
+qwen-vl-utils==0.0.14
+
+# Data / numerics
+numpy==1.26.4
+pillow==11.3.0
+h5py==3.15.1
+
+# Logging and plotting
+tensorboard==2.15.2
+matplotlib==3.7.5
+matplot2tikz==0.5.3
+
+# Optional: Weights & Biases logging (enable with --wandb)
+wandb==0.23.1
