@@ -2,8 +2,9 @@
 
 Test-time adaptation of Vision-Language Model reward functions from a few expert demonstrations.
 
-[![arXiv](https://img.shields.io/badge/arXiv-2606.00083-b31b1b.svg)](https://arxiv.org/abs/2606.00083)
-[![OpenReview](https://img.shields.io/badge/OpenReview-wjuZ5Qy141-8c1b13.svg)](https://openreview.net/forum?id=wjuZ5Qy141)
+[![Paper](https://img.shields.io/badge/Paper-%20%F0%9F%93%84-blue)](https://arxiv.org/abs/2606.00083)
+[![OpenReview](https://img.shields.io/badge/OpenReview-%20%F0%9F%93%9D-orange)](https://openreview.net/forum?id=wjuZ5Qy141)
+[![RL code](https://img.shields.io/badge/RL%20code-%20%F0%9F%A6%BE-green)](https://github.com/cgumbsch/Demo2Reward_RL)
 
 ## Idea
 
@@ -13,7 +14,8 @@ Reinforcement learning relies on accurate reward functions, which are often hand
 
 **Demo2Reward** is a test-time adaptation technique that optimizes the language instruction of a VLM reward model using a small set of expert demonstrations (3–10 trajectories). A Meta-Critic VLM iteratively rewrites the task instruction to reduce false positives while preserving true positives, requiring no additional model training or extra computation during policy learning.
 
-This repository contains the prompt-optimization code (the Demo2Reward loop). It produces an optimized, binary success-detection instruction.
+This repository contains the prompt-optimization code (the Demo2Reward loop). It produces an optimized, binary success-detection instruction. **The repository for running RL experiments with VLM reward models can be found [here](https://github.com/cgumbsch/Demo2Reward_RL).**
+
 
 
 ## Installation
@@ -47,7 +49,7 @@ data/
   real/<task>/dataset.pkl                # task in {lid}
 ```
 
-The HDF5 dataset files can be generated from the sibling RL repository.
+The HDF5 dataset files can be generated from the [sibling RL repository](https://github.com/cgumbsch/Demo2Reward_RL).
 
 ## Usage
 
